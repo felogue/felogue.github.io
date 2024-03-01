@@ -94,7 +94,7 @@ body {
   }
 
   .color-link:hover, a:hover{
-    color: var(--azul);
+    color: var(--yellow);
   }
 
   .color-link:visited, a:visited{
