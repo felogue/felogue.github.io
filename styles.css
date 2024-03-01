@@ -1,0 +1,518 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap');
+
+/* Custom properties / variables */
+:root {
+  --purple: #8D2373;
+  --magenta: #3E0470;
+  --yellow: #BFB930;
+  --amethyst: #A368D5;
+  --azul: #180773;
+  --azul-claro: #8070D8;
+}
+
+/* Reinicio básico */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* font-size media queries*/
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html{
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html{
+    font-size: 55%;
+  }
+}
+
+/* Base styles */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  h1,
+  h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h1{
+    font-size: 6rem;
+  }
+
+  h2{
+    font-size: 4.2rem;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .color-link:link, a:link {
+    color: white;
+  }
+
+  .color-link:active, a:active{
+    color: var(--magenta);
+  }
+
+  .color-link:hover, a:hover{
+    color: var(--azul);
+  }
+
+  .color-link:visited, a:visited{
+    color: var(--amethyst);
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+
+  img{
+    display: block;
+    width: 100%;
+  }
+
+  .certification-section-header,
+  .projects-section-header{
+    color: #eee;
+    max-width: 775px;
+    margin: 0 auto 3rem auto;
+    border-bottom: 0.2rem solid var(--azul-claro);
+  }
+
+  .certification-section > p:nth-of-type(1),
+  .projects-section > p:nth-of-type(1){
+    color: var(--yellow);
+    max-width: 775px;
+    margin: 0 auto 5rem; 
+  }
+  
+   /* nav */
+   .nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to left, #3d3c3c 50%,var(--purple) ,var(--magenta));
+    text-transform: uppercase;
+    z-index: 10;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-list{
+    display: flex;
+    margin-right: 2rem;
+  }
+
+  @media (max-width: 28.75em) {
+    .nav {
+      justify-content: center;
+    }
+
+    .nav-list {
+      margin: 0 1rem;
+    }
+  }
+  
+  .nav-list li a {
+    display: block;
+    margin-right: 15px;
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+  
+  /* Welcome section */
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: repeating-radial-gradient(
+    var(--magenta) 0.1px,
+    black,
+    var(--purple) 5px
+  ); 
+  }
+  
+  #welcome-section h1 {
+    color: var(--yellow);
+    text-shadow: 2px 4px 4px #333333;
+  }
+
+  #welcome-section span,
+  #welcome-section h2{
+    color: var(--amethyst);
+    text-shadow: 0px 2px 1px #333333;
+  }
+
+  #welcome-section span{
+    font-size: 3em;
+    font-weight: bold;
+  }
+
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-2000px);
+      -webkit-transform: translateX(-2000px);
+      -ms-transform: translateX(-2000px);
+      -o-transform: translateX(-2000px);
+      -moz-transform: translateX(-2000px);
+}
+  
+    100% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      -moz-transform: translateX(0);
+}
+  }
+
+  .slideInLeft {
+    animation: slideInLeft 2s ease-out 1;
+    animation-delay: 10ms;
+    -webkit-animation: slideInLeft 2s ease-out 1;
+}
+
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(2000px);
+      -webkit-transform: translateX(2000px);
+      -ms-transform: translateX(2000px);
+      -o-transform: translateX(2000px);
+      -moz-transform: translateX(2000px);
+}
+  
+    100% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      -moz-transform: translateX(0);
+}
+  }
+
+  .slideInRight {
+    animation: slideInRight 2s ease-out 1;
+    animation-delay: 40ms;
+    -webkit-animation: slideInRight 2s ease-out 1;
+}
+  
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      -moz-transform: translateY(-2000px);
+      transform: translateY(-2000px);
+      -webkit-transform: translateY(-2000px);
+      -ms-transform: translateY(-2000px);
+      -o-transform: translateY(-2000px);
+  }
+  
+    100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+  }
+  }
+  
+  .slideInUp {
+    animation: slideInUp 1s ease-out 1;
+    -webkit-animation: slideInUp 1s ease-out 1;
+}
+/* Certification Section */
+
+.certification-section{
+  background: radial-gradient(#353333 10%, var(--azul) 30%, var(--magenta) 50%, black);
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.certification-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 6rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 0;
+}
+
+.certification-flex{
+  display: flex;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  overflow: hidden;
+  background-color: #604BD8;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+#certification-one{
+  background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/proyectos-certificacion/5-survey-form-certificacion/5-survey-form.png"); 
+}
+
+#certification-two{
+  background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/proyectos-certificacion/10-pagina-homenaje-certificacion/10-tributo.png");
+}
+
+#certification-three{
+  background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/proyectos-certificacion/14-pagina-documentacion-tecnica/14-documenacion-tecnica.png");
+}
+
+#certification-four{
+  background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/proyectos-certificacion/17-landing-page/17-landing-page.png");
+}
+
+.certification-box{
+  width: 50%;
+  background-color: rgba(24, 7, 115, 0.5);
+  padding: 48px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.certification-box > h3, .certification-box > p {
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+.certification-box > button {
+  padding: 12px 24px;
+  font-size: 1.6rem;
+  border: none;
+  margin-top: 20px;
+  border-radius: 4px;
+  background-color: var(--yellow);
+}
+
+
+/* Media queries Certification section*/
+
+@media screen and (max-width: 640px) {
+  .certification-box{
+      flex: 1;
+      padding: 32px;
+      margin-top: 200px;
+  }
+
+  .certification-box > button{
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 403px) {
+  .certification-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+   
+  /* Projects section */
+
+  .projects-section {
+    background: radial-gradient(#353333 10%, var(--azul) 30%, var(--magenta) 50%, black);
+    text-align: center;
+    padding: 10rem 2rem;
+  }
+
+  .projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  .project{
+    background-color: #BFB930;
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    max-height: 350px;
+  }
+
+  .project-image{
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .project-title{
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    transition: all 200ms;
+  }
+
+  /* .project-title:hover{
+    transform: scale(1.2, 1.2);
+  } */
+
+  /* Animación cartel */
+@keyframes swing {
+  20% {
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  40% {
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    -moz-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+
+  80% {
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.project:hover {
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  animation: swing 1s linear 1;
+  -webkit-animation: swing 1s linear 1;
+}
+
+/* Contact section */
+
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 3rem;
+  background: linear-gradient(
+    var(--azul) 0%,
+    var(--magenta)10%,
+    black 
+  );
+}
+
+.contact-section-header > h2{
+  font-size: 6rem;
+}
+
+.contact-section-header > h2,
+.contact-section-header > p {
+  color: #f0f0f0; 
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-links{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details{
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  color: var(--amethyst);
+  transition: all 200ms;
+}
+
+.contact-details:hover{
+  color: white;
+  transform: scale(1.2, 1.2);
+}
+
+/* Footer */
+
+footer{
+  display: flex;
+  font-weight: 300;
+  justify-content: space-evenly;
+  background: linear-gradient(to right, #3d3c3c 50%,var(--purple) ,var(--magenta));
+  color: var(--amethyst);
+  padding: 2rem;
+  border-top: 4px solid var(--amethyst);
+}
+
+footer > p {
+  margin: 2rem;
+  
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+ 
