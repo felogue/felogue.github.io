@@ -85,21 +85,30 @@ body {
     text-decoration: none;
   }
 
-  .color-link:link, a:link {
+  /* .color-link:link, a:link {
     color: white;
-  }
-
-  .color-link:active, a:active{
+  } */
+  .certification-box > button a,
+  .project-tile:link {
+    /* color: var(--yellow); */
     color: var(--magenta);
+  } 
+  
+  .certification-box > button a:hover,
+  .project-tile:hover{
+    /* color: var(--yellow); */
+    color: black;
   }
 
-  .color-link:hover, a:hover{
-    color: var(--yellow);
-  }
+  .certification-box > button a:visited,
+  .project-tile:visited {
+    /* color: var(--yellow); */
+    color: white;
+  } 
 
-  .color-link:visited, a:visited{
+  /* .color-link:visited, a:visited{
     color: var(--amethyst);
-  }
+  } */
   
   p {
     margin-bottom: 10px;
@@ -159,6 +168,22 @@ body {
     margin-right: 15px;
     font-size: 2.2rem;
     padding: 2rem;
+  }
+
+  .color-link:link, a:link {
+    color: white;
+  }
+
+  .color-link:active, a:active{
+    color: var(--magenta);
+  }
+
+  .color-link:hover, a:hover{
+    color: var(--yellow);
+  }
+
+  .color-link:visited, a:visited{
+    color: var(--amethyst);
   }
   
   /* Welcome section */
