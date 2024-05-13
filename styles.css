@@ -84,7 +84,23 @@ body {
   a{
     text-decoration: none;
   }
- 
+
+  .color-link:link, a:link {
+    color: white;
+  }
+
+  .color-link:active, a:active{
+    color: var(--magenta);
+  }
+
+  .color-link:hover, a:hover{
+    color: var(--yellow);
+  }
+
+  .color-link:visited, a:visited{
+    color: var(--amethyst);
+  }
+  
   p {
     margin-bottom: 10px;
   }
@@ -128,22 +144,6 @@ body {
     margin-right: 2rem;
   }
 
-  .color-link:link, a:link {
-    color: white;
-  }
-
-  /* .color-link:active, a:active{
-    color: var(--magenta);
-  } */
-
-  .color-link:hover, a:hover{
-    color: var(--yellow);
-  }
-
-  .color-link:visited, a:visited{
-    color: var(--amethyst);
-  }
-
   @media (max-width: 28.75em) {
     .nav {
       justify-content: center;
@@ -160,8 +160,6 @@ body {
     font-size: 2.2rem;
     padding: 2rem;
   }
-
-  .color-link
   
   /* Welcome section */
   #welcome-section {
@@ -290,9 +288,9 @@ body {
   justify-content: flex-end;
   background-size: cover;
   background-position: center;
-  /* background-blend-mode: multiply; */
+  background-blend-mode: multiply;
   overflow: hidden;
-  /* background-color: #604BD8; */
+  background-color: #604BD8;
   border-radius: 1rem;
   box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
   -webkit-border-radius: 1rem;
