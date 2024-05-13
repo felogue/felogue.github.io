@@ -85,24 +85,19 @@ body {
     text-decoration: none;
   }
 
-  /* .color-link:link, a:link {
-    color: white;
-  } */
+  
   .certification-box > button a,
   .project-tile:link {
-    /* color: var(--yellow); */
     color: var(--magenta);
   } 
   
   .certification-box > button a:hover,
   .project-tile:hover{
-    /* color: var(--yellow); */
     color: black;
   }
 
   .certification-box > button a:visited,
   .project-tile:visited {
-    /* color: var(--yellow); */
     color: white;
   } 
 
