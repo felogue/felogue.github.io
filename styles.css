@@ -157,6 +157,10 @@ body {
       margin: 0 1rem;
     }
   }
+
+  .nav-list li:hover {
+    background-color: var(--yellow);
+  }
   
   .nav-list li a {
     display: block;
@@ -169,12 +173,8 @@ body {
     color: white;
   }
 
-  .color-link:active, a:active{
-    color: var(--magenta);
-  }
-
   .color-link:hover, a:hover{
-    color: var(--yellow);
+    color: var(--magenta);
   }
 
   .color-link:visited, a:visited{
