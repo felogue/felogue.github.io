@@ -1,0 +1,112 @@
+/* Animation Welcome section */
+
+@keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-2000px);
+      -webkit-transform: translateX(-2000px);
+      -ms-transform: translateX(-2000px);
+      -o-transform: translateX(-2000px);
+      -moz-transform: translateX(-2000px);
+}
+  
+    100% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      -moz-transform: translateX(0);
+}
+  }
+
+  .slideInLeft {
+    animation: slideInLeft 2s ease-out 1;
+    animation-delay: 10ms;
+    -webkit-animation: slideInLeft 2s ease-out 1;
+}
+
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(2000px);
+      -webkit-transform: translateX(2000px);
+      -ms-transform: translateX(2000px);
+      -o-transform: translateX(2000px);
+      -moz-transform: translateX(2000px);
+}
+  
+    100% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      -moz-transform: translateX(0);
+}
+  }
+
+  .slideInRight {
+    animation: slideInRight 2s ease-out 1;
+    animation-delay: 40ms;
+    -webkit-animation: slideInRight 2s ease-out 1;
+}
+  
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      -moz-transform: translateY(-2000px);
+      transform: translateY(-2000px);
+      -webkit-transform: translateY(-2000px);
+      -ms-transform: translateY(-2000px);
+      -o-transform: translateY(-2000px);
+  }
+  
+    100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+  }
+  }
+  
+  .slideInUp {
+    animation: slideInUp 1s ease-out 1;
+    -webkit-animation: slideInUp 1s ease-out 1;
+}
+
+ /* Animation Projects section */
+@keyframes swing {
+    20% {
+      -moz-transform: rotate(15deg);
+      transform: rotate(15deg);
+    }
+  
+    40% {
+      -moz-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+  
+    60% {
+      -moz-transform: rotate(5deg);
+      transform: rotate(5deg);
+    }
+  
+    80% {
+      -moz-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      -moz-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+  
+  .project:hover {
+    -moz-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    animation: swing 1s linear 1;
+    -webkit-animation: swing 1s linear 1;
+  }
+
