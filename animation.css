@@ -77,24 +77,36 @@
  /* Animation Projects section */
 @keyframes swing {
     20% {
-      -moz-transform: rotate(15deg);
-      transform: rotate(15deg);
-    }
-  
-    40% {
-      -moz-transform: rotate(-10deg);
-      transform: rotate(-10deg);
-    }
-  
-    60% {
       -moz-transform: rotate(5deg);
       transform: rotate(5deg);
-    }
+      -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+      -o-transform: rotate(5deg);
+}
   
-    80% {
+    40% {
       -moz-transform: rotate(-5deg);
       transform: rotate(-5deg);
-    }
+      -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+}
+  
+    60% {
+      -moz-transform: rotate(2deg);
+      transform: rotate(2deg);
+      -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+      -o-transform: rotate(2deg);
+}
+  
+    80% {
+      -moz-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+      -o-transform: rotate(-2deg);
+}
   
     100% {
       -moz-transform: rotate(0deg);
