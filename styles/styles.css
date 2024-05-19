@@ -63,9 +63,6 @@ body {
     text-decoration: none;
   }
 
-  
- 
- 
   p {
     margin-bottom: 10px;
   }
@@ -135,7 +132,7 @@ body {
   }
 
   .color-link:visited{
-    color: var(rgb(194, 190, 190));
+    color: rgb(rgb(194, 190, 190));
   }
   
   /* Welcome section */
