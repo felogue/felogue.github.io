@@ -113,7 +113,6 @@ body {
     text-transform: uppercase;
     z-index: 10;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    
   }
 
   ul.nav-list{
@@ -123,7 +122,6 @@ body {
 
   ul.nav-list li {
     display: flex;
-    padding: 10px;
     align-items: center;
   }
 
@@ -132,20 +130,19 @@ body {
   }
   
   ul.nav-list li a {
-    display: block;
     font-size: 2.2rem;
-    padding: 0 0.1rem 0 0.2rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
   }
 
-  .color-link:link, a:link {
+  .color-link:link {
     color: white;
   }
 
-  .color-link:hover, a:hover{
+  .color-link:hover{
     color: var(--magenta);
   }
 
-  .color-link:visited, a:visited{
+  .color-link:visited{
     color: var(--amethyst);
   }
   
