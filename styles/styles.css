@@ -385,3 +385,7 @@ footer > p {
 footer > p > a {
   color: var(--amethyst);
 }
+
+footer > p > a:hover {
+  color: white;
+}
