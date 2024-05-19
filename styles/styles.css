@@ -380,6 +380,8 @@ footer{
 
 footer > p {
   margin: 2rem;
-  
 }
 
+footer > p > a {
+  color: var(--amethyst);
+}
