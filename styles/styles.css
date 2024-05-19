@@ -30,28 +30,6 @@ html {
   font-size: 62.5%;
 }
 
-/* font-size media queries*/
-
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
-
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html{
-    font-size: 58%;
-  }
-}
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html{
-    font-size: 55%;
-  }
-}
 
 /* Base styles */
 
@@ -100,11 +78,7 @@ body {
   .project-tile:visited {
     color: white;
   } 
-
-  /* .color-link:visited, a:visited{
-    color: var(--amethyst);
-  } */
-  
+ 
   p {
     margin-bottom: 10px;
   }
@@ -148,15 +122,6 @@ body {
     margin-right: 2rem;
   }
 
-  @media (max-width: 28.75em) {
-    .nav {
-      justify-content: center;
-    }
-
-    .nav-list {
-      margin: 0 1rem;
-    }
-  }
 
   .nav-list li:hover {
     background-color: var(--yellow);
@@ -295,26 +260,7 @@ body {
   color: #BFB930;
 }
 
-/* Media queries Certification section*/
 
-@media screen and (max-width: 640px) {
-  .certification-box{
-      flex: 1;
-      padding: 32px;
-      margin-top: 200px;
-  }
-
-  .certification-box > button{
-      width: 100%;
-  }
-}
-
-@media screen and (max-width: 403px) {
-  .certification-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-   
   /* Projects section */
 
   .projects-section {
@@ -427,10 +373,3 @@ footer > p {
   
 }
 
-@media (max-width: 28.75em) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
- 

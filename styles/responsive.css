@@ -1,0 +1,66 @@
+/* font-size media queries*/
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  /* 980px / 16px = 61.25em */
+  @media (max-width: 61.25em) {
+    html{
+      font-size: 58%;
+    }
+  }
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html{
+      font-size: 55%;
+    }
+  }
+
+  
+/* nav media-queries */
+
+    @media (max-width: 28.75em) {
+        .nav {
+          justify-content: center;
+        }
+    
+        .nav-list {
+          margin: 0 1rem;
+        }
+      }
+
+      
+/* Media queries Certification section*/
+
+@media screen and (max-width: 640px) {
+    .certification-box{
+        flex: 1;
+        padding: 32px;
+        margin-top: 200px;
+    }
+  
+    .certification-box > button{
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 403px) {
+    .certification-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+/* footer media queries */
+
+@media (max-width: 28.75em) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+   
