@@ -123,7 +123,12 @@ body {
   ul.nav-list li {
     display: flex;
     align-items: center;
-  }
+    transition: all 800ms;
+    -webkit-transition: all 800ms;
+    -moz-transition: all 800ms;
+    -ms-transition: all 800ms;
+    -o-transition: all 800ms;
+}
 
   ul.nav-list li:hover {
     background-color: var(--yellow);
@@ -143,7 +148,7 @@ body {
   }
 
   .color-link:visited{
-    color: var(--);
+    color: var(rgb(194, 190, 190));
   }
   
   /* Welcome section */
