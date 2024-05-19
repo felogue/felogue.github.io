@@ -105,8 +105,6 @@ body {
   
    /* nav */
    .nav {
-    display: flex;
-    justify-content: flex-end;
     position: fixed;
     top: 0;
     left: 0;
@@ -115,23 +113,28 @@ body {
     text-transform: uppercase;
     z-index: 10;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    
   }
 
-  .nav-list{
+  ul.nav-list{
     display: flex;
-    margin-right: 2rem;
+    justify-content: flex-end;
   }
 
+  ul.nav-list li {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
 
-  .nav-list li:hover {
+  ul.nav-list li:hover {
     background-color: var(--yellow);
   }
   
-  .nav-list li a {
+  ul.nav-list li a {
     display: block;
-    margin-right: 15px;
     font-size: 2.2rem;
-    padding: 2rem;
+    padding: 0 0.1rem 0 0.2rem;
   }
 
   .color-link:link, a:link {
