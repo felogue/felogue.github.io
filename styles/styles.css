@@ -255,7 +255,8 @@ body {
 }
 
 .certification-section p > a {
-  color: var(--purple);
+  color: var(--yellow);
+  text-decoration: underline;
 }
 
 .certification-box > button:hover {
