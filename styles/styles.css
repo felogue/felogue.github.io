@@ -131,7 +131,7 @@ body {
   
   ul.nav-list li a {
     font-size: 2.2rem;
-    padding: 0.3rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .color-link:link {
@@ -143,7 +143,7 @@ body {
   }
 
   .color-link:visited{
-    color: var(--amethyst);
+    color: var(--);
   }
   
   /* Welcome section */
@@ -252,6 +252,10 @@ body {
   -moz-transition: all 300ms;
   -ms-transition: all 300ms;
   -o-transition: all 300ms;
+}
+
+.certification-section p > a {
+  color: var(--purple);
 }
 
 .certification-box > button:hover {
