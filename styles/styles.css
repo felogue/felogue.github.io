@@ -64,20 +64,7 @@ body {
   }
 
   
-  .certification-box > button a,
-  .project-tile:link {
-    color: var(--magenta);
-  } 
-  
-  .certification-box > button a:hover,
-  .project-tile:hover{
-    color: black;
-  }
-
-  .certification-box > button a:visited,
-  .project-tile:visited {
-    color: white;
-  } 
+ 
  
   p {
     margin-bottom: 10px;
@@ -306,6 +293,18 @@ body {
     font-size: 2rem;
     padding: 2rem 0.5rem;
     transition: all 200ms;
+  }
+  
+  .project-tile:link {
+    color: var(--magenta);
+  } 
+  
+  .project-tile:hover{
+    color: black;
+  }
+
+  .project-tile:visited {
+    color: white;
   } 
 
 /* Contact section */
