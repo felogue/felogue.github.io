@@ -123,15 +123,15 @@ body {
     padding: 1rem 2rem;
   }
 
-  .color-link:link {
+  a.color-link:link {
     color: white;
   }
 
-  .color-link:hover{
+  a.color-link:hover{
     color: var(--magenta);
   }
 
-  .color-link:visited{
+  a.color-link:visited{
     color: rgb(rgb(194, 190, 190));
   }
   
