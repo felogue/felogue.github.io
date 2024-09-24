@@ -122,3 +122,10 @@
     -webkit-animation: swing 1s linear 1;
   }
 
+  .card:hover {
+    -moz-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    animation: swing 1s linear 1;
+    -webkit-animation: swing 1s linear 1;
+  }

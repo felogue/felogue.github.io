@@ -192,7 +192,7 @@ body {
   background-position: center;
   background-blend-mode: multiply;
   overflow: hidden;
-  /* background-color: #604BD8; */
+  
   border-radius: 1rem;
   box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
   -webkit-border-radius: 1rem;
@@ -202,18 +202,22 @@ body {
 }
 
 #certification-one{
+  background-color: #A368D5;
   background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/proyectos-certificacion/5-survey-form-certificacion/5-survey-form.png"); 
 }
 
 #certification-two{
+  background-color: #A368D5;
   background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/proyectos-certificacion/10-pagina-homenaje-certificacion/10-tributo.png");
 }
 
 #certification-three{
+  background-color: #A368D5;
   background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/proyectos-certificacion/14-pagina-documentacion-tecnica/14-documenacion-tecnica.png");
 }
 
 #certification-four{
+  background-color: #A368D5;
   background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/proyectos-certificacion/17-landing-page/17-landing-page.png");
 }
 
@@ -278,6 +282,33 @@ body {
     border-radius: 3px;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
     max-height: 350px;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+    overflow: hidden;
+    color: #000;
+  }
+
+  .card .imagen{
+    width: 100%;
+    height: calc(100% - 4.8rem);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    overflow: hidden;
+  }
+
+  .card .imagen.fondo-card-1{
+    background-color: #8070D8;
+    background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/lecciones/2-cafe-menu/2-cafe-menu.png");
+  }
+
+  .titulo-card{
+    background-color: var(--yellow);
+    padding: 15px;
   }
 
   .project-image{
