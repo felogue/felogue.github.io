@@ -295,6 +295,7 @@ body {
   .card .imagen{
     width: 100%;
     height: calc(100% - 4.8rem);
+    min-height: 250px;
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
@@ -305,6 +306,47 @@ body {
     background-color: #8070D8;
     background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/lecciones/2-cafe-menu/2-cafe-menu.png");
   }
+
+  .card .imagen.fondo-card-2{
+    background-color: #8070D8;
+    background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/lecciones/4-registration-form/4-registration-form.png");
+  }
+
+  .card .imagen.fondo-card-3{
+    background-color: #8070D8;
+    background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/refs/heads/main/1-responsive-web-design/lecciones/7-Flexbox-Galeria-de-Fotos/7-flexbox.png");
+  }
+
+  .card .imagen.fondo-card-4{
+    background-color: #8070D8;
+    background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/lecciones/8-Tipografia/8-tipografia.png");
+  }
+
+  .card .imagen.fondo-card-5{
+    background-color: #8070D8;
+    background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/lecciones/9-Accesibilidad/9-Accesibilidad.png");
+  }
+
+  .card .imagen.fondo-card-6{
+    background-color: #8070D8;
+    background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/lecciones/11-Pseudo-Selectores-CSS/11-pseudo-selectores.png");
+  }
+
+  .card .imagen.fondo-card-7{
+    background-color: #8070D8;
+    background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/lecciones/13-Diseno-Web-Adaptativo-Construyendo-Piano/13-Diseno-Web-Adaptativo-Construyendo-Piano.png");
+  }
+
+  .card .imagen.fondo-card-8{
+    background-color: #8070D8;
+    background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/lecciones/15-Variables-CSS/15-Variables-CSS.png");
+  }
+
+  .card .imagen.fondo-card-9{
+    background-color: #8070D8;
+    background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/lecciones/16-CSS-Grid/16-CSS-Grid.png");
+  }
+
 
   .titulo-card{
     background-color: var(--yellow);
