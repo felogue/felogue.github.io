@@ -203,7 +203,7 @@ body {
 
 #certification-one{
   background-color: #A368D5;
-  background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/proyectos-certificacion/5-survey-form-certificacion/5-survey-form.png"); 
+  background-image: url("https://raw.githubusercontent.com/felogue/Github-Teide/refs/heads/main/Recetario/images/26-09-24-ScreenShots-Recetario.png"); 
 }
 
 #certification-two{
@@ -345,6 +345,11 @@ body {
   .card .imagen.fondo-card-9{
     background-color: #8070D8;
     background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/lecciones/16-CSS-Grid/16-CSS-Grid.png");
+  }
+
+  .card .imagen.fondo-card-10{
+    background-color: #8070D8;
+    background-image: url("https://raw.githubusercontent.com/felogue/Free_code_camp/main/1-responsive-web-design/proyectos-certificacion/10-pagina-homenaje-certificacion/10-tributo.png");
   }
 
 
