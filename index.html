@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/animation.css">
   <link rel="stylesheet" href="styles/responsive.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/e72e37a9ef.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -50,7 +52,7 @@
       está página Portfolio con HTML5 y CSS3, en los siguientes proyectos:</p>
     <div class="certification-grid">
 
-    
+
       <div id="certification-one" class="certification-flex">
         <div class="certification-box">
           <h3>CRUD Formulario Recetas</h3>
@@ -112,10 +114,20 @@
 
       <div class="card">
         <div class="imagen fondo-card-1" aria-label="Imagen de fondo: Cafe Menu"></div>
-        <div class="titulo-card">
-          <a href="https://felogue.github.io/Free_code_camp/1-responsive-web-design/lecciones/2-cafe-menu/index.html"
-            target="_blank">Cafe Menu
-          </a>
+        <div class="contenido-card">
+          <div class="titulo-card">
+            <a href="https://github.com/felogue/Free_code_camp/tree/main/1-responsive-web-design/lecciones/2-cafe-menu"
+              target="_blank" class="icon-link"><i class="fa-brands fa-github"></i></a>
+            <span class="titulo-texto">Cafe Menu</span> 
+            <a href="https://felogue.github.io/Free_code_camp/1-responsive-web-design/lecciones/2-cafe-menu/index.html"
+              target="_blank" class="icon-link"><i class="fa-solid fa-eye"></i></a>
+          </div>
+          <div class="resumen-tecnico">
+            <span class="icon-resumen"><i class="fa-brands fa-html5"></i></span>
+            <span class="icon-resumen"><i class="fa-brands fa-css3-alt"></i></span>
+            <p>El objetivo es aprender CSS básico diseñando una página para el menú de la página web de una cafetería </p>
+          </div>
+          <button class="toggle-resumen">Ver Resumen</button>
         </div>
       </div>
 
@@ -243,6 +255,15 @@
 
   <!-- END FOOTER -->
 
+  <!-- START SCRIPTS -->
+  <script>
+    $(document).ready(function () {
+      $('.toggle-resumen').click(function () {
+        var resumenTecnico = $(this).prev('.resumen-tecnico');
+        resumenTecnico.slideToggle();
+      });
+    });
+  </script>
 </body>
 
 </html>
